@@ -15,7 +15,7 @@ function Card({ name, description, html_url }) {
                     <FaJs />
                     <FaReact />
                 </div>
-                <a href={html_url} target="_blank" rel="nopenner norefferer noreferrer" className={styles.botao}>
+                <a href={html_url} target="_blank" rel="nopenner noreferrer" className={styles.botao}>
                     <BsArrowRight />
                 </a>
             </div>

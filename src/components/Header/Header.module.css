@@ -7,6 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* aula 11 extra 01 */
+    position: fixed;
+    top: 0;
 }
 
 .header span {
@@ -23,4 +26,51 @@
 
 .header a:hover {
     color: var(--red);
+}
+
+/* menu sandwich */
+@media (max-width: 768px) {
+    
+    .menuButton {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .linha {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .menuSandwich {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: var(--primary);
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .show {
+        width: 100%;
+    }
 }
